@@ -5,6 +5,7 @@
 - Backend python
 - LLM mistral
 - CLI make (pour les target build test deploy)
+- Always use docker for local dev env (no npm or pip install locally, use docker compose)
 - Github action to execute make build test deploy targets
 - Github pages for UI deployment and Scaleway container PaaS to deploy the python backend
 - instruction IA pour l'instant dans le README avec un schema d'archi en mermaid
@@ -19,7 +20,7 @@ SCW_NAMESPACE_ID
 
 Fournis une première version avec UI backend test et déploiement fonctionnant de bout en bout.
 
-Tu as comme model github pages + scw container le projet https://github.com/rhanka/nc-fullstack qui a un front svelte et un backend python une target make et un github action fonctionnant pour le deploiement. Je te suggère très fortement de t'inspirer du scaffolding de ce projet qui marche de bout en bout (la seule différence est l'utilisation de MISTRAL à la place d'OPENAI)
+Tu as comme model github pages + scw container le projet https://github.com/rhanka/nc-fullstack qui a un front svelte et un backend python une target make, docker, et un github action fonctionnant pour le deploiement. Je te suggère très fortement de t'inspirer du scaffolding de ce projet qui marche de bout en bout (la seule différence est l'utilisation de MISTRAL à la place d'OPENAI)
 
 Mets bien à jour le README à la fin pour pouvoir itérer.
 
