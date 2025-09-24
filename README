@@ -1,4 +1,8 @@
-1. Objectif: créer une application pour traduite des docs uploadé en conservant le format
+1. Objectif: créer une application pour traduite des docs office (docx, pptx) uploadé en conservant leur format
+
+1.1 Indice: Il s'agit de dépackager le zip xml et de traduire balise par balise, et passer chaque paragraphe à un llm
+1.2 Attention: à la prise en charge des mises en exergue (italique, blod) au sein de paragraphe, il faut le cas échéant
+    assurer que le llm prenne en compte le paragraphe complet, en respectant les balises internes de mise en exergue sans rompre le sens.
 
 2. archi
 - UI Svelte
