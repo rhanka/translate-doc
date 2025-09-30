@@ -32,7 +32,17 @@ class RunFormatting:
         size = float(font.size.pt) if font.size else None
         color = font.color.rgb if font.color and font.color.rgb else None
         highlight = font.highlight_color if getattr(font, "highlight_color", None) else None
-        color_hex = f"{int(color):06X}" if color is not None else None
+        # Handle RGBColor object properly
+        if color is not None:
+            if hasattr(color, 'rgb'):
+                # RGBColor object - access the rgb property
+                color_hex = f"{color.rgb:06X}"
+            else:
+                # RGBColor object - unpack RGB values and convert to hex
+                r, g, b = color
+                color_hex = f"{r:02X}{g:02X}{b:02X}"
+        else:
+            color_hex = None
         highlight_value = int(highlight) if highlight is not None else None
         return cls(
             bold=run.bold,

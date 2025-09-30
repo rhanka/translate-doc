@@ -97,7 +97,7 @@
     <div>
       <h1>Translate Doc</h1>
       <p>
-        Téléversez vos documents texte, DOCX ou PPTX pour les traduire en français tout en conservant leur mise en forme.
+        Téléversez vos documents texte, DOCX ou PPTX pour les traduire en anglais tout en conservant leur mise en forme.
       </p>
     </div>
   </section>
@@ -115,7 +115,7 @@
         {#if isSubmitting}
           Envoi...
         {:else}
-          Traduire
+          Traduire en anglais
         {/if}
       </button>
       {#if errorMessage}
@@ -143,7 +143,7 @@
         <p class="message">{currentJob.message}</p>
       {/if}
       {#if currentJob.status === 'completed'}
-        <a class="primary" href={apiUrl(currentJob.result_url)} download> Télécharger la traduction </a>
+        <a class="primary" href={apiUrl(currentJob.result_url)} download> Télécharger la traduction anglaise </a>
       {:else if currentJob.status === 'failed'}
         <p class="error">Une erreur est survenue pendant la traduction.</p>
       {/if}

@@ -17,7 +17,7 @@ from .utils import (
 )
 
 DOCX_SYSTEM_PROMPT = (
-    "You are a meticulous translator. Translate the user content into French. "
+    "You are a meticulous translator. Translate the user content into English. "
     "Do not add or remove any tags. Each segment is wrapped in <sX>...</sX> tags. "
     "Keep tags identical and in the same order. When multiple paragraphs are provided, they are separated by "
     f"the token {PARAGRAPH_DELIMITER}. Return paragraphs in the same order using the same delimiter."

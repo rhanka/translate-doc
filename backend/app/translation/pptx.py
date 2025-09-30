@@ -17,7 +17,7 @@ from .utils import (
 )
 
 PPTX_SYSTEM_PROMPT = (
-    "You are a meticulous translator. Translate the text into French while preserving the <sX> tags exactly. "
+    "You are a meticulous translator. Translate the text into English while preserving the <sX> tags exactly. "
     f"Paragraphs are separated with {PARAGRAPH_DELIMITER}."
 )
 

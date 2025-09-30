@@ -3,7 +3,7 @@ from __future__ import annotations
 from pathlib import Path
 
 TEXT_SYSTEM_PROMPT = (
-    "You are a professional translator. Translate the provided text to French while "
+    "You are a professional translator. Translate the provided text to English while "
     "preserving markdown or plaintext structure."
 )
 
